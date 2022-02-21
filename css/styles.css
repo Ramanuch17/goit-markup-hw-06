@@ -624,12 +624,13 @@ ul {
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal {
+.modal-form {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 
+  padding: 40px;
   min-width: 528px;
   min-height: 581px;
 
@@ -642,33 +643,115 @@ ul {
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+.modal-form .form-title {
+  margin-bottom: 12px;
+  text-align: center;
 
-  display: inline-flex;
+  font-size: 20px;
+  line-height: 1.15;
 
-  width: 30px;
-  height: 30px;
+  color: var(--title-text-color);
+}
 
-  background-color: var(--primary-white-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+.modal-form .modal-form-field {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form .label-title {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+}
+
+.modal-form .form-input {
+  margin-bottom: 10px;
+  padding: 11px 12px 11px 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
 
   cursor: pointer;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn::before {
-  margin: auto;
-  content: '';
-  width: 11px;
-  height: 11px;
+.modal-form .form-textarea {
+  margin-bottom: 10px;
+  padding: 11px 12px;
+  min-height: 120px;
 
-  background-image: url(../images/icons/modal-btn.svg);
-  background-size: contain;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  resize: none;
+  cursor: pointer;
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-form .checkbox-label {
+  position: relative;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.modal-form .label-title {
+  font-size: 14px;
+  line-height: 1.64;
+}
+
+.checkbox-label .link {
+  margin-left: 5px;
+
+  font-size: 14px;
+  line-height: 1.64;
+
+  color: var(--accent-text-color);
+  text-decoration: underline;
+}
+
+.checkbox-label .label-title {
+  margin-bottom: 0;
+}
+
+.checkbox-label .checkbox-icon {
+  margin-right: 7px;
+  width: 16px;
+  height: 15px;
+
+  border: 2px solid var(--primary-black-color);
+  border-radius: 2px;
+
+  opacity: 1;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checked-icon {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  transform: translate(12px, 4px);
+  width: 16px;
+  height: 15px;
+
+  opacity: 0;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-checkbox:checked + .checkbox-icon {
+  opacity: 0;
+}
 /*!----- Portfolio page -----*/
 /*!----- Portfolio page -----*/
 /*!----- Portfolio page -----*/

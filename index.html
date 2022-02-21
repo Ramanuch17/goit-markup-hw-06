@@ -446,9 +446,54 @@
   <!-- Modal window -->
 
   <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button class="modal-btn" type="button" data-modal-close></button>
-    </div>
+    <form class="modal-form" autocomplete="off">
+      <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
+      <label class="modal-form-field">
+        <span class="label-title">Имя</span>
+        <input class="form-input" type="text" name="name" id="name" />
+        <svg class="icon">
+          <use href=""></use>
+        </svg>
+      </label>
+
+      <label class="modal-form-field">
+        <span class="label-title">Телефон</span>
+        <input class="form-input" type="tel" name="phone" />
+        <svg class="icon">
+          <use href=""></use>
+        </svg>
+      </label>
+
+      <label class="modal-form-field">
+        <span class="label-title">Почта</span>
+        <input class="form-input" type="email" name="mail" />
+        <svg class="icon">
+          <use href=""></use>
+        </svg>
+      </label>
+
+      <label class="modal-form-field">
+        <span class="label-title">Комментарий</span>
+        <textarea class="form-input" name="comment" placeholder="Введите текст"></textarea>
+      </label>
+
+      <label class="modal-form-field checkbox-label">
+        <input class="form-checkbox visually-hidden" type="checkbox" name="policy" />
+        <svg class="checked-icon">
+          <use href=""></use>
+        </svg>
+        <span class="label-title">Соглашаюсь с рассылкой и принимаю</span>
+        <a class="link" href="">Условия договора</a>
+      </label>
+
+      <button class="button" type="submit">Отправить</button>
+
+      <button class="modal-close-btn" type="button" data-modal-close>
+        <svg class="">
+          <use href=""></use>
+        </svg>
+      </button>
+    </form>
   </div>
 
   <script src="./js/modal.js"></script>

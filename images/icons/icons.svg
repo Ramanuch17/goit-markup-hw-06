@@ -78,5 +78,8 @@
       <path fill="#2196f3" style="fill:var(--color1, #2196f3)" d="M4 1h24a4 4 0 0 1 4 4v22a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V5a4 4 0 0 1 4-4z"/>
       <path fill="#fff" style="fill:var(--color2, #fff);stroke:var(--color2, #fff)" stroke="#fff" stroke-width=".4" d="m7.914 16.504-.138-.132-.138.13L5.71 18.33l.152.146 7.13 6.8.138-.132 15.16-14.462-.152-.144-1.902-1.814-.138.132-13.106 12.492-5.078-4.844z"/>
     </symbol>
+    <symbol id="icon-send" viewBox="0 0 32 32">
+      <path fill="#fff" style="fill:var(--color2, #fff)" d="M32 0 0 18l10.227 3.788L26 7 14.002 23.186l.01.004-.012-.004V32l5.735-6.691L27 28l5-28z"/>
+    </symbol>
   </defs>
 </svg>

@@ -669,7 +669,7 @@ ul {
 
 .modal-form .form-input {
   margin-bottom: 10px;
-  padding: 11px 12px 11px 42px;
+  padding: 11px 12px 11px 12px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
@@ -682,7 +682,7 @@ ul {
 
 .modal-form .form-textarea {
   margin-bottom: 10px;
-  padding: 11px 12px;
+  padding: 12px 16px;
   min-height: 120px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -752,6 +752,108 @@ ul {
 .form-checkbox:checked + .checkbox-icon {
   opacity: 0;
 }
+
+.form-checkbox:checked ~ .checked-icon {
+  opacity: 1;
+}
+
+.modal-form .submit-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+
+  background-color: var(--primary-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.modal-form-field .icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  transform: translate(12px, 38px);
+
+  fill: var(--primary-black-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form-field:focus-within .icon {
+  fill: var(--accent-text-color);
+}
+
+.modal-form-field:focus-within .form-input,
+.modal-form-field:focus-within .form-textarea {
+  border: 1px solid var(--accent-text-color);
+  outline: 0;
+}
+
+.modal-form-field:hover .icon {
+  fill: var(--accent-text-color);
+}
+
+.modal-form-field:hover .form-textarea,
+.modal-form-field:hover .form-input {
+  border: 1px solid var(--accent-text-color);
+}
+
+.modal-close-btn .icon {
+  width: 18px;
+  height: 18px;
+
+  fill: var(--primary-black-color);
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover .icon,
+.modal-close-btn:focus .icon {
+  fill: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-btn {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 28px;
+
+  background-color: var(--accent-text-color);
+  color: var(--primary-white-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  transition: background-color var(--animation);
+}
+
+.submit-btn:focus,
+.submit-btn:hover {
+  background-color: #188ce8;
+}
+
 /*!----- Portfolio page -----*/
 /*!----- Portfolio page -----*/
 /*!----- Portfolio page -----*/

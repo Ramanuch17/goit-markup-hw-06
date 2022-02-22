@@ -348,6 +348,38 @@ ul {
   background-color: var(--accent-text-color);
 }
 
+/*!---- Subscription section ----*/
+
+.footer-form {
+  display: flex;
+  margin-left: auto;
+}
+
+.footer-form .form-field {
+  display: flex;
+  flex-direction: column;
+  margin-right: 12px;
+}
+
+.footer-form .form-input {
+  padding: 15px;
+  width: 358px;
+
+  background-color: transparent;
+  color: var(--primary-white-color);
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.footer-form .submit-btn {
+  margin-top: auto;
+}
+
 /*!----- Main section -----*/
 
 /*!---- Hero section -----*/
@@ -669,7 +701,7 @@ ul {
 
 .modal-form .form-input {
   margin-bottom: 10px;
-  padding: 11px 12px 11px 12px;
+  padding: 11px 12px 11px 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
